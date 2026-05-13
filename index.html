@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Club Deportivo Juventud Parla - Fútbol base con valores. Inscripciones abiertas para la temporada 2026/2027. Últimas noticias del club." />
+  <title>Club Deportivo Juventud Parla</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="imagenes/logo.jpg" alt="Logo CD Juventud Parla" />
+        <span>CD Juventud Parla</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#club" class="nav-link">El Club</a></li>
+        <li><a href="#equipos" class="nav-link">Equipos</a></li>
+        <li><a href="#noticias" class="nav-link">Noticias</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#" class="nav-btn" id="btnInscripcionNav">Inscripción</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" style="background-image: url('imagenes/hero_bg.png');"></div>
+    <div class="hero-overlay"></div>
+    <img src="imagenes/logo.jpg" alt="" class="hero-watermark" aria-hidden="true" loading="eager" />
+    <div class="hero-content">
+      <p class="hero-sub">Temporada 2025/2026</p>
+      <h1 class="hero-title">Club Deportivo<br /><span>Juventud Parla</span></h1>
+      <p class="hero-desc">Formando futbolistas y personas desde la base.<br />Fútbol, valores y comunidad en Parla.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" id="btnInscripcionHero">⚽ Inscripción Pruebas 2026/2027</button>
+        <a href="#equipos" class="btn-secondary">Ver Equipos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL CLUB -->
+  <section class="club" id="club">
+    <div class="container">
+      <div class="section-header">
+        <h2>El Club</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="club-grid">
+        <div class="club-history">
+          <h3 class="history-title">Nuestra Historia</h3>
+          <p>El Club Deportivo Juventud Parla nace con la ilusión de fomentar el deporte y los valores saludables en
+            nuestra ciudad. Nos enorgullece ser un punto de encuentro para jóvenes talentos, ofreciendo un entorno donde
+            la educación, el compañerismo y la superación personal son nuestros pilares fundamentales.</p>
+          <p style="margin-top: 1rem;">Contamos con equipos en todas las categorías de fútbol base, desde Benjamín hasta
+            Juvenil, tanto en rama masculina como femenina, comprometidos con el desarrollo integral de cada jugador/a.
+          </p>
+        </div>
+        <div class="club-values">
+          <div class="value-card">
+            <div class="value-icon">⚽</div>
+            <h4>Formación</h4>
+            <p>Desarrollo técnico y táctico adaptado a cada edad.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h4>Compañerismo</h4>
+            <p>Fomentamos el trabajo en equipo y la amistad.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">📈</div>
+            <h4>Esfuerzo</h4>
+            <p>La constancia es la clave para alcanzar las metas.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">❤️</div>
+            <h4>Igualdad</h4>
+            <p>Respeto e integración en todas nuestras categorías.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPOS -->
+  <section class="equipos" id="equipos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Categorías y Equipos</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Selecciona una categoría para ver los equipos</p>
+      </div>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="masculino" id="tabMasc">
+          <span>👨</span> Masculino
+        </button>
+        <button class="tab-btn" data-tab="femenino" id="tabFem">
+          <span>👩</span> Femenino
+        </button>
+      </div>
+
+      <!-- MASCULINO -->
+      <div class="tab-content active" id="tab-masculino">
+        <div class="photo-band">
+          <img src="imagenes/equipo_masculino.jpg" alt="Equipos Masculinos CD Juventud Parla" />
+          <div class="photo-band-overlay">
+            <h3>Categorías Masculinas</h3>
+            <p>Temporada 2025/2026</p>
+          </div>
+        </div>
+        <div class="teams-grid">
+          <div class="team-card" data-team="benjamin-masc">
+            <div class="team-card-icon">⚽</div>
+            <h4>Benjamín Masculino</h4>
+            <p>Sub-8 / Sub-9</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="alevin-masc">
+            <div class="team-card-icon">⚽</div>
+            <h4>Alevín Masculino</h4>
+            <p>Sub-10 / Sub-11</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="infantil-masc">
+            <div class="team-card-icon">⚽</div>
+            <h4>Infantil Masculino</h4>
+            <p>Sub-12 / Sub-13</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="cadete-masc">
+            <div class="team-card-icon">⚽</div>
+            <h4>Cadete Masculino</h4>
+            <p>Sub-14 / Sub-15</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="juvenil-masc">
+            <div class="team-card-icon">⚽</div>
+            <h4>Juvenil Masculino</h4>
+            <p>Sub-16 / Sub-18</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEMENINO -->
+      <div class="tab-content" id="tab-femenino">
+        <div class="photo-band">
+          <img src="imagenes/equipo_femenino.jpg" alt="Equipos Femeninos CD Juventud Parla" />
+          <div class="photo-band-overlay">
+            <h3>Categorías Femeninas</h3>
+            <p>Temporada 2025/2026</p>
+          </div>
+        </div>
+        <div class="teams-grid">
+          <div class="team-card" data-team="benjamin-fem">
+            <div class="team-card-icon">⚽</div>
+            <h4>Benjamín Femenino</h4>
+            <p>Sub-8 / Sub-9</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="alevin-fem">
+            <div class="team-card-icon">⚽</div>
+            <h4>Alevín Femenino</h4>
+            <p>Sub-10 / Sub-11</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="infantil-fem">
+            <div class="team-card-icon">⚽</div>
+            <h4>Infantil Femenino</h4>
+            <p>Sub-12 / Sub-13</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="cadete-fem">
+            <div class="team-card-icon">⚽</div>
+            <h4>Cadete Femenino</h4>
+            <p>Sub-14 / Sub-15</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+          <div class="team-card" data-team="juvenil-fem">
+            <div class="team-card-icon">⚽</div>
+            <h4>Juvenil Femenino</h4>
+            <p>Sub-16 / Sub-18</p>
+            <button class="btn-team">Ver equipo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="noticias" id="noticias">
+    <div class="container">
+      <div class="section-header">
+        <h2>Últimas Noticias</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Síguenos en Instagram
+          <a href="https://www.instagram.com/c.d.e_juventud_parla" target="_blank" rel="noopener"
+            class="ig-link">@c.d.e_juventud_parla</a>
+        </p>
+      </div>
+
+      <!-- Carrusel horizontal -->
+      <div class="noticias-scroll-wrap">
+        <div class="noticias-scroll" id="noticiasScroll">
+
+          <article class="noticia-card">
+            <div class="noticia-img">
+              <img src="imagenes/noticia1.png" alt="El Alevín A asciende a categoría Autonómica" loading="lazy" />
+            </div>
+            <div class="noticia-body">
+              <span class="noticia-date">15/05/2026</span>
+              <h3 class="noticia-title">El Alevín A asciende a categoría Autonómica</h3>
+              <p class="noticia-desc">El equipo consigue subir de categoría después de una victoria en casa en un partido muy disputado.</p>
+            </div>
+          </article>
+
+          <article class="noticia-card">
+            <div class="noticia-img">
+              <img src="imagenes/noticia1.png" alt="Victoria importante del Alevín A" loading="lazy" />
+            </div>
+            <div class="noticia-body">
+              <span class="noticia-date">15 Octubre 2026</span>
+              <h3 class="noticia-title">Victoria importante del Alevín A</h3>
+              <p class="noticia-desc">El equipo consigue tres puntos clave en casa en un partido muy disputado.</p>
+            </div>
+          </article>
+
+          <article class="noticia-card">
+            <div class="noticia-img">
+              <img src="imagenes/noticia1.png" alt="Abierto plazo de inscripción" loading="lazy" />
+            </div>
+            <div class="noticia-body">
+              <span class="noticia-date">10 Octubre 2026</span>
+              <h3 class="noticia-title">Abierto plazo de inscripción</h3>
+              <p class="noticia-desc">Aún quedan plazas disponibles en nuestras categorías inferiores. ¡Únete!</p>
+            </div>
+          </article>
+
+          <article class="noticia-card">
+            <div class="noticia-img">
+              <img src="imagenes/noticia1.png" alt="Presentación de las nuevas equipaciones" loading="lazy" />
+            </div>
+            <div class="noticia-body">
+              <span class="noticia-date">5 Octubre 2026</span>
+              <h3 class="noticia-title">Presentación de las nuevas equipaciones</h3>
+              <p class="noticia-desc">Descubre los nuevos colores que defenderemos esta temporada.</p>
+            </div>
+          </article>
+
+        </div>
+        <!-- Indicador de scroll -->
+        <p class="scroll-hint">← Desliza para ver más noticias →</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contacto-grid">
+
+        <!-- INFO + MAPA -->
+        <div class="contacto-info">
+          <h3>¿Tienes alguna duda?</h3>
+          <p class="contacto-sub">Ponte en contacto con nosotros para inscripciones, patrocinios o cualquier otra consulta.</p>
+
+          <ul class="contacto-datos">
+            <li>
+              <span class="contacto-icon">📍</span>
+              <span>Parla, Madrid</span>
+            </li>
+            <li>
+              <span class="contacto-icon">📷</span>
+              <a href="https://www.instagram.com/c.d.e_juventud_parla" target="_blank" rel="noopener">@c.d.e_juventud_parla</a>
+            </li>
+            <li>
+              <span class="contacto-icon">✉️</span>
+              <a href="mailto:info@cdjuventudparla.es">info@cdjuventudparla.es</a>
+            </li>
+          </ul>
+
+          <div class="contacto-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12167.78!2d-3.7747!3d40.2389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41881b8c817ee1%3A0x56b5c4e97e5cb21a!2sParla%2C%20Madrid!5e0!3m2!1ses!2ses!4v1716300000000"
+              width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Ubicación Parla Madrid"></iframe>
+          </div>
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="contacto-form-wrap">
+          <form id="formContacto" novalidate>
+            <div class="form-group">
+              <label for="contactNombre">Nombre completo</label>
+              <input type="text" id="contactNombre" name="contactNombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Correo electrónico</label>
+              <input type="email" id="contactEmail" name="contactEmail" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contactMensaje">Mensaje</label>
+              <textarea id="contactMensaje" name="contactMensaje" rows="6"
+                placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <div id="contactMsg" class="form-msg" style="display:none;"></div>
+            <button type="submit" class="btn-submit" id="btnContactoSubmit">Enviar Mensaje</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="imagenes/logo.jpg" alt="Logo CD Juventud Parla" class="footer-logo" />
+          <p>Club Deportivo Juventud Parla</p>
+          <small>Fútbol base con valores</small>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#club">El Club</a></li>
+            <li><a href="#equipos">Equipos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 Parla, Madrid</p>
+          <p>📧 info@juventudparla.es</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CD Juventud Parla · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL EQUIPO -->
+  <div class="modal-overlay" id="modalEquipo" role="dialog" aria-modal="true" aria-label="Información del equipo">
+    <div class="modal">
+      <button class="modal-close" id="closeModalEquipo" aria-label="Cerrar">&times;</button>
+      <h2 class="modal-title" id="modalEquipoTitle">Nombre Equipo</h2>
+      <div class="modal-img-wrap">
+        <img id="modalEquipoImg" src="" alt="Foto equipo" />
+      </div>
+      <div class="modal-actions">
+        <button class="btn-modal-action" id="btnClasificacion">🏆 Clasificación</button>
+        <button class="btn-modal-action" id="btnResultados">📋 Resultados</button>
+      </div>
+      <div class="modal-iframe-wrap" id="iframeWrap" style="display:none;">
+        <button class="btn-close-iframe" id="closeIframe">✕ Cerrar tabla</button>
+        <iframe id="rffmIframe" src="" title="Clasificación RFFM" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PREINSCRIPCIÓN -->
+  <div class="modal-overlay" id="modalPreins" role="dialog" aria-modal="true" aria-label="Formulario de preinscripción">
+    <div class="modal modal-form">
+      <button class="modal-close" id="closeModalPreins" aria-label="Cerrar">&times;</button>
+      <h2 class="modal-form-title">Formulario de <span class="highlight">preinscripción</span></h2>
+      <p class="modal-form-sub">¡En breve contactaremos contigo!</p>
+
+      <div id="formMsg" class="form-msg" style="display:none;"></div>
+
+      <form id="formPreins" novalidate>
+        <fieldset>
+          <legend class="fieldset-title">Datos personales del jugador/a</legend>
+
+          <div class="form-group">
+            <label for="nombreJugador">Nombre y apellidos jugador/a (*)</label>
+            <input type="text" id="nombreJugador" name="nombreJugador" required placeholder="Nombre completo" />
+          </div>
+
+          <div class="form-group">
+            <label for="fechaNac">Fecha de nacimiento jugador/a (*)</label>
+            <input type="date" id="fechaNac" name="fechaNac" required />
+          </div>
+
+          <div class="form-group">
+            <label for="equipoProcedencia">Equipo procedencia (*)</label>
+            <select id="equipoProcedencia" name="equipoProcedencia" required>
+              <option value="">---</option>
+              <option value="sin_club">Sin club anterior</option>
+              <option value="otro_club">Otro club</option>
+              <option value="juventud_parla">CD Juventud Parla</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="especificarClub">Especificar club</label>
+            <input type="text" id="especificarClub" name="especificarClub" placeholder="Nombre del club" />
+          </div>
+
+          <div class="form-group">
+            <label for="posicion">Posición (*)</label>
+            <select id="posicion" name="posicion" required>
+              <option value="">---</option>
+              <option value="portero">Portero/a</option>
+              <option value="defensa">Defensa</option>
+              <option value="centrocampista">Centrocampista</option>
+              <option value="delantero">Delantero/a</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset-title">Datos padre/madre/tutor legal (menor de edad)</legend>
+
+          <div class="form-group">
+            <label for="nombreTutor">Nombre y apellidos padre/madre/tutor legal (*)</label>
+            <input type="text" id="nombreTutor" name="nombreTutor" required placeholder="Nombre completo" />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono móvil (*)</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="6XX XXX XXX" pattern="[0-9]{9}" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico (*)</label>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" />
+          </div>
+        </fieldset>
+
+        <p class="form-note">(*) Campos obligatorios</p>
+        <button type="submit" class="btn-submit" id="btnSubmitForm">Enviar Preinscripción</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
