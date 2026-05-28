@@ -48,7 +48,7 @@ const teamsData = {
     name: 'Alevín Femenino',
     img: 'imagenes/equipo_femenino.jpg',
     clasificacion: 'https://www.rffm.es/competicion/clasificaciones?temporada=21&tipojuego=2&competicion=24037773&grupo=24312263&jornada=26',
-    resultados:    'https://www.rffm.es/competicion/resultados?temporada=21&tipojuego=2&competicion=24037773&grupo=24312263&jornada=26'
+    resultados:    'https://www.rffm.es/competicion/calendario?temporada=21&tipojuego=2&competicion=24037773&grupo=24312263&jornada=26&jornada=26'
   },
   'infantil-fem': {
     name: 'Infantil Femenino',
